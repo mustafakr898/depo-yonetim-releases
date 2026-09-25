@@ -1,6 +1,6 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.74-20260925140304';
+const SURUM = 'depo-0.9.74-20260925151429';
 const DOSYALAR = [
   './',
   'assets/AssetManifest.bin',
@@ -32,6 +32,7 @@ const DOSYALAR = [
   'main.dart.mjs',
   'main.dart.wasm',
   'manifest.json',
+  'sqflite_sw.js',
   'sqlite3.wasm',
   'vendor/zxing-0.21.3.min.js',
   'vendor/zxing-LICENSE.txt',
