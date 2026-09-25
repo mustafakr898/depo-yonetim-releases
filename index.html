@@ -1,1 +1,79 @@
-﻿<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><title>Depo Yönetimi</title></head><body><p>Depo Yönetimi web sürümü hazırlanıyor.</p></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!--
+    Base href: `flutter build web --base-href /depo-yonetim-releases/` ile
+    doldurulur (GitHub Pages alt yolu).
+  -->
+  <base href="/depo-yonetim-releases/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Flash Depo — stok, fiş ve sipariş takibi.">
+
+  <!-- iPhone: ana ekrana eklenince tam ekran uygulama gibi açılır -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Depo">
+  <meta name="theme-color" content="#3949AB">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Depo Yönetimi</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script>
+    // Çevrimdışı açılış: yayın sırasında üretilen depo_sw.js uygulama
+    // dosyalarını önbelleğe alır (depoda internet kesilse de uygulama açılır;
+    // veriler zaten tarayıcı veritabanında). Dosya yoksa (yerel geliştirme)
+    // kayıt sessizce başarısız olur.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('depo_sw.js').catch(function () {});
+      });
+    }
+    // TEK SEKME KİLİDİ: tarayıcı SQLite'ı çalışansız modda her sekmede AYRI
+    // kopya açar; iki sekme aynı veritabanına yazarsa birbirini ezer (kuyruk
+    // kaybı). İlk sekme kilidi sayfa açık kaldıkça tutar; ikinci sekme
+    // uygulamayı AÇMAZ. Web Locks yoksa (çok eski tarayıcı) engel yok.
+    window.depoTekSekme = new Promise(function (coz) {
+      try {
+        if (!navigator.locks || !navigator.locks.request) { coz(true); return; }
+        navigator.locks.request('depo-tek-sekme', { ifAvailable: true }, function (kilit) {
+          coz(!!kilit);
+          if (kilit) return new Promise(function () {});
+        }).catch(function () { coz(true); });
+      } catch (e) { coz(true); }
+    });
+    // KALICI DEPOLAMA: tarayıcıdan yerel veritabanını (gönderilmemiş kayıtlar
+    // dahil) kendiliğinden SİLMEMESİNİ iste. Ana ekrana eklenmiş uygulamada
+    // Safari genelde kabul eder; reddedilirse davranış eskisi gibidir.
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().catch(function () {});
+    }
+    // Güncelleme: yeni sürümün önbellek çalışanı KURULUP DEVREYE GİRENE kadar
+    // bekler (en çok 60 sn), sonra yeniler — yoksa ilk yenileme eski
+    // önbellekten ESKİ sürümü açıyordu. Uygulama (Dart) bunu çağırır.
+    window.depoGuncelleVeYenile = function () {
+      var yenile = function () { window.location.reload(); };
+      if (!('serviceWorker' in navigator)) { yenile(); return; }
+      navigator.serviceWorker.getRegistration().then(function (r) {
+        if (!r) { yenile(); return; }
+        var bitti = false;
+        var son = function () { if (!bitti) { bitti = true; yenile(); } };
+        setTimeout(son, 60000);
+        navigator.serviceWorker.addEventListener('controllerchange', son);
+        r.update().then(function () {
+          // Yeni sürüm yoksa (ya da hâlâ indirilmediyse) beklemenin anlamı yok.
+          if (!r.installing && !r.waiting) son();
+        }).catch(son);
+      }).catch(yenile);
+    };
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
