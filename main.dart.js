@@ -13666,7 +13666,7 @@ case 46:s=2
 break
 case 49:p=52
 s=55
-return A.b(A.ff("kurulu_surum","0.9.76"),$async$hF)
+return A.b(A.ff("kurulu_surum","0.9.77"),$async$hF)
 case 55:p=2
 s=54
 break
@@ -14744,8 +14744,8 @@ _.cx=s},
 ux(a,b){return A.cVf(a,b)},
 cVf(a6,a7){var s=0,r=A.m(t.v),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5
 var $async$ux=A.i(function(a8,a9){if(a8===1){o.push(a9)
-s=p}for(;;)switch(s){case 0:a4=A.d2("0.9.76",$.cH)
-if(a4)A.K(A.dA("0.9.76"))
+s=p}for(;;)switch(s){case 0:a4=A.d2("0.9.77",$.cH)
+if(a4)A.K(A.dA("0.9.77"))
 p=4
 n=t.a.a(B.ad.dU(0,a7,null))
 s=7
@@ -14973,8 +14973,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$KZ,r)},
 L_(a){var s=0,r=A.m(t.MR),q,p,o,n,m,l,k,j,i,h
 var $async$L_=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 for(h=a.length,p=0;o=a.length,p<o;a.length===h||(0,A.L)(a),++p){n=a[p]
 o=$.bx
 if(o==null)o=$.bx=new A.di()
@@ -15212,8 +15212,8 @@ m.$3("stok_hareketler","insert",l)}}case 1:return A.k(q,r)}})
 return A.l($async$KX,r)},
 kM(b3,b4,b5,b6,b7,b8,b9){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2
 var $async$kM=A.i(function(c0,c1){if(c0===1)return A.j(c1,r)
-for(;;)switch(s){case 0:b2=A.d2("0.9.76",$.cH)
-if(b2)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:b2=A.d2("0.9.77",$.cH)
+if(b2)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$kM)
 case 3:p=c1
@@ -15372,8 +15372,8 @@ b2.$3("ariza_kayitlari","update",l)}case 1:return A.k(q,r)}})
 return A.l($async$kM,r)},
 rH(a,a0){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$rH=A.i(function(a1,a2){if(a1===1)return A.j(a2,r)
-for(;;)switch(s){case 0:b=A.d2("0.9.76",$.cH)
-if(b)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:b=A.d2("0.9.77",$.cH)
+if(b)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$rH)
 case 3:p=a2
@@ -15439,8 +15439,8 @@ wl(a,b,c,d,e,f,g,h,i,j,k,l){return A.cVB(a,b,c,d,e,f,g,h,i,j,k,l)},
 cVB(a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5
 var $async$wl=A.i(function(b8,b9){if(b8===1)return A.j(b9,r)
 for(;;)switch(s){case 0:a4={}
-a5=A.d2("0.9.76",$.cH)
-if(a5)A.K(A.dA("0.9.76"))
+a5=A.d2("0.9.77",$.cH)
+if(a5)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$wl)
 case 3:p=b9
@@ -15530,8 +15530,8 @@ case 13:case 1:return A.k(q,r)}})
 return A.l($async$wl,r)},
 p6(a4){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
 var $async$p6=A.i(function(a5,a6){if(a5===1)return A.j(a6,r)
-for(;;)switch(s){case 0:a3=A.d2("0.9.76",$.cH)
-if(a3)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a3=A.d2("0.9.77",$.cH)
+if(a3)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$p6)
 case 3:p=a6
@@ -15707,8 +15707,8 @@ break}case 1:return A.k(q,r)}})
 return A.l($async$TM,r)},
 L0(a,b){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i
 var $async$L0=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:i=A.d2("0.9.76",$.cH)
-if(i)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:i=A.d2("0.9.77",$.cH)
+if(i)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$L0)
 case 2:q=d
@@ -15756,8 +15756,8 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$zk,r)},
 qc(b5,b6,b7,b8,b9){var s=0,r=A.m(t.N),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4
 var $async$qc=A.i(function(c0,c1){if(c0===1)return A.j(c1,r)
-for(;;)switch(s){case 0:b3=A.d2("0.9.76",$.cH)
-if(b3)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:b3=A.d2("0.9.77",$.cH)
+if(b3)A.K(A.dA("0.9.77"))
 b3=$.bx
 if((b3==null?$.bx=new A.di():b3).kw(b9))throw A.o(A.i6(A.i7().j6("d\xfczenlenemez")))
 s=3
@@ -15920,8 +15920,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$TL,r)},
 zl(a,b){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j
 var $async$zl=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:j=A.d2("0.9.76",$.cH)
-if(j)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:j=A.d2("0.9.77",$.cH)
+if(j)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$zl)
 case 3:p=d
@@ -15974,8 +15974,8 @@ cvv(a,b,c){var s=new A.aJi(a)
 return J.q(s.$1(b),s.$1(c))},
 uz(a9,b0){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8
 var $async$uz=A.i(function(b1,b2){if(b1===1)return A.j(b2,r)
-for(;;)switch(s){case 0:a8=A.d2("0.9.76",$.cH)
-if(a8)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a8=A.d2("0.9.77",$.cH)
+if(a8)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$uz)
 case 3:p=b2
@@ -16191,8 +16191,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$adp,r)},
 Lk(a){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j
 var $async$Lk=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:j=A.d2("0.9.76",$.cH)
-if(j)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:j=A.d2("0.9.77",$.cH)
+if(j)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Lk)
 case 3:p=c
@@ -16235,8 +16235,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$Lk,r)},
 ww(a4,a5){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
 var $async$ww=A.i(function(a6,a7){if(a6===1)return A.j(a7,r)
-for(;;)switch(s){case 0:a3=A.d2("0.9.76",$.cH)
-if(a3)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a3=A.d2("0.9.77",$.cH)
+if(a3)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$ww)
 case 2:q=a7
@@ -16354,8 +16354,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$Ez,r)},
 EA(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k
 var $async$EA=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$EA)
 case 2:q=c
@@ -16388,8 +16388,8 @@ return A.k(null,r)}})
 return A.l($async$EA,r)},
 Li(a){var s=0,r=A.m(t.y),q,p,o,n,m,l
 var $async$Li=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:l=A.d2("0.9.76",$.cH)
-if(l)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:l=A.d2("0.9.77",$.cH)
+if(l)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Li)
 case 3:p=c
@@ -16620,8 +16620,8 @@ return A.b(A.al(),$async$Mg)
 case 3:k=c
 s=4
 return A.b(A.zX(k),$async$Mg)
-case 4:p=A.d2("0.9.76",$.cH)
-if(p)A.K(A.dA("0.9.76"))
+case 4:p=A.d2("0.9.77",$.cH)
+if(p)A.K(A.dA("0.9.77"))
 p=t.N
 o=t.z
 n=A.ce(a.eh(),p,o)
@@ -16643,8 +16643,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$Mg,r)},
 Vd(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k
 var $async$Vd=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$Vd)
 case 2:q=c
@@ -16666,8 +16666,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$Vd,r)},
 rQ(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g
 var $async$rQ=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$rQ)
 case 2:q=c
@@ -16883,8 +16883,8 @@ AP(a,b){return A.cZp(a,b)},
 cZp(b0,b1){var s=0,r=A.m(t.S),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
 var $async$AP=A.i(function(b2,b3){if(b2===1){o.push(b3)
 s=p}for(;;)switch(s){case 0:a6={}
-a7=A.d2("0.9.76",$.cH)
-if(a7)A.K(A.dA("0.9.76"))
+a7=A.d2("0.9.77",$.cH)
+if(a7)A.K(A.dA("0.9.77"))
 a7=$.bx
 if(a7==null)a7=$.bx=new A.di()
 if(a7.fD(b0.r))throw A.o(A.i6(A.i7().gQN()))
@@ -16971,8 +16971,8 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$AP,r)},
 wY(a1){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
 var $async$wY=A.i(function(a2,a3){if(a2===1)return A.j(a3,r)
-for(;;)switch(s){case 0:a0=A.d2("0.9.76",$.cH)
-if(a0)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a0=A.d2("0.9.77",$.cH)
+if(a0)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$wY)
 case 3:p=a3
@@ -17089,8 +17089,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$Xc,r)},
 G_(a){var s=0,r=A.m(t.S),q,p,o,n,m,l,k
 var $async$G_=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$G_)
 case 3:p=c
@@ -17115,8 +17115,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$G_,r)},
 Ni(a,b){var s=0,r=A.m(t.H),q,p,o,n
 var $async$Ni=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$Ni)
 case 2:q=d
@@ -17133,8 +17133,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$Ni,r)},
 xm(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j
 var $async$xm=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$xm)
 case 2:q=c
@@ -18063,7 +18063,7 @@ k=a.length>500?B.e.ag(a,0,500):a
 if(b==null)j=null
 else j=b.length>4000?B.e.ag(b,0,4000):b
 i=t.N
-j=A.E(["mesaj",k,"detay",j,"cihaz",n,"kullanici_ad",$.hJ,"surum","0.9.76"],i,t.u)
+j=A.E(["mesaj",k,"detay",j,"cihaz",n,"kullanici_ad",$.hJ,"surum","0.9.77"],i,t.u)
 i=A.ce(m.b,i,i)
 i.j(0,"Prefer","")
 s=6
@@ -18186,8 +18186,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$aoo,r)},
 OY(a,b,c){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h
 var $async$OY=A.i(function(d,e){if(d===1)return A.j(e,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$OY)
 case 3:p=e
@@ -18224,8 +18224,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$a_Z,r)},
 OZ(a){var s=0,r=A.m(t.H),q,p,o,n
 var $async$OZ=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$OZ)
 case 2:q=c
@@ -18241,8 +18241,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$OZ,r)},
 a_Y(a){var s=0,r=A.m(t.H),q,p,o,n
 var $async$a_Y=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$a_Y)
 case 2:q=c
@@ -18258,8 +18258,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$a_Y,r)},
 HR(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i
 var $async$HR=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:i=A.d2("0.9.76",$.cH)
-if(i)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:i=A.d2("0.9.77",$.cH)
+if(i)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$HR)
 case 2:q=c
@@ -18283,8 +18283,8 @@ case 6:return A.k(null,r)}})
 return A.l($async$HR,r)},
 a_U(a,b,c,d){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g
 var $async$a_U=A.i(function(e,f){if(e===1)return A.j(f,r)
-for(;;)switch(s){case 0:g=A.d2("0.9.76",$.cH)
-if(g)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:g=A.d2("0.9.77",$.cH)
+if(g)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$a_U)
 case 3:p=f
@@ -18313,8 +18313,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$a_U,r)},
 a_V(a,b,c,d){var s=0,r=A.m(t.H),q,p,o,n,m
 var $async$a_V=A.i(function(e,f){if(e===1)return A.j(f,r)
-for(;;)switch(s){case 0:m=A.d2("0.9.76",$.cH)
-if(m)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:m=A.d2("0.9.77",$.cH)
+if(m)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$a_V)
 case 2:q=f
@@ -18335,8 +18335,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$a_V,r)},
 a_W(a){var s=0,r=A.m(t.H),q,p,o,n
 var $async$a_W=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$a_W)
 case 2:q=c
@@ -18503,8 +18503,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$BW,r)},
 Zi(a){var s=0,r=A.m(t.pu),q,p,o,n,m,l
 var $async$Zi=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:l=A.d2("0.9.76",$.cH)
-if(l)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:l=A.d2("0.9.77",$.cH)
+if(l)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Zi)
 case 3:p=c
@@ -18524,8 +18524,8 @@ amG(a){var s=0,r=A.m(t.H),q,p,o,n,m,l
 var $async$amG=A.i(function(b,c){if(b===1)return A.j(c,r)
 for(;;)switch(s){case 0:l=a.a
 if(l==null){s=1
-break}p=A.d2("0.9.76",$.cH)
-if(p)A.K(A.dA("0.9.76"))
+break}p=A.d2("0.9.77",$.cH)
+if(p)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$amG)
 case 3:o=c
@@ -18539,8 +18539,8 @@ p.$3("personel","update",m)}case 1:return A.k(q,r)}})
 return A.l($async$amG,r)},
 amH(a){var s=0,r=A.m(t.H),q,p,o,n
 var $async$amH=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$amH)
 case 2:q=c
@@ -18607,8 +18607,8 @@ s=1
 break
 case 1:return A.k(q,r)}})
 return A.l($async$a0C,r)},
-cxN(a,b){var s=A.d2("0.9.76",$.cH)
-if(s)A.K(A.dA("0.9.76"))
+cxN(a,b){var s=A.d2("0.9.77",$.cH)
+if(s)A.K(A.dA("0.9.77"))
 if(a!=null){s=$.bx
 s=(s==null?$.bx=new A.di():s).kw(a)}else s=!1
 if(s)throw A.o(A.i6(A.i7().j6(b)))},
@@ -18911,8 +18911,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$apd,r)},
 a0S(a,b){var s=0,r=A.m(t.i),q,p,o,n,m,l,k,j,i,h
 var $async$a0S=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 h=$.bx
 if(h==null)h=$.bx=new A.di()
 if(h.kw(new A.J(Date.now(),0,!1)))throw A.o(A.i6(A.i7().j6("ay\u0131rt\u0131lamaz")))
@@ -19079,8 +19079,8 @@ y_(a,b){return A.d3H(a,b)},
 d3H(a,b){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$y_=A.i(function(a0,a1){if(a0===1)return A.j(a1,r)
 for(;;)switch(s){case 0:e={}
-d=A.d2("0.9.76",$.cH)
-if(d)A.K(A.dA("0.9.76"))
+d=A.d2("0.9.77",$.cH)
+if(d)A.K(A.dA("0.9.77"))
 d=$.bx
 if(d==null)d=$.bx=new A.di()
 if(d.fD(a.r))throw A.o(A.i6(A.i7().gQN()))
@@ -19125,8 +19125,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$y_,r)},
 vE(a,b){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$vE=A.i(function(c,a0){if(c===1)return A.j(a0,r)
-for(;;)switch(s){case 0:e=A.d2("0.9.76",$.cH)
-if(e)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:e=A.d2("0.9.77",$.cH)
+if(e)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$vE)
 case 3:p=a0
@@ -19178,8 +19178,8 @@ CB(a,b){return A.d3J(a,b)},
 d3J(a0,a1){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$CB=A.i(function(a2,a3){if(a2===1)return A.j(a3,r)
 for(;;)switch(s){case 0:c={}
-b=A.d2("0.9.76",$.cH)
-if(b)A.K(A.dA("0.9.76"))
+b=A.d2("0.9.77",$.cH)
+if(b)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.qZ(a0),$async$CB)
 case 2:q=a3
@@ -19224,8 +19224,8 @@ case 9:return A.k(null,r)}})
 return A.l($async$CB,r)},
 vD(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h
 var $async$vD=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$vD)
 case 3:p=c
@@ -19280,8 +19280,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$vD,r)},
 Ic(a0,a1){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$Ic=A.i(function(a2,a3){if(a2===1)return A.j(a3,r)
-for(;;)switch(s){case 0:b=A.d2("0.9.76",$.cH)
-if(b)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:b=A.d2("0.9.77",$.cH)
+if(b)A.K(A.dA("0.9.77"))
 q=a0.a
 if(q==null)throw A.o(A.b_("updateSiparis: id null",null))
 b=$.bx
@@ -19322,8 +19322,8 @@ case 8:return A.k(null,r)}})
 return A.l($async$Ic,r)},
 qY(a1){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
 var $async$qY=A.i(function(a2,a3){if(a2===1)return A.j(a3,r)
-for(;;)switch(s){case 0:a0=A.d2("0.9.76",$.cH)
-if(a0)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a0=A.d2("0.9.77",$.cH)
+if(a0)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$qY)
 case 2:q=a3
@@ -19926,8 +19926,8 @@ r_(a,b){return A.d3I(a,b)},
 d3I(b6,b7){var s=0,r=A.m(t.v),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5
 var $async$r_=A.i(function(b8,b9){if(b8===1)return A.j(b9,r)
 for(;;)switch(s){case 0:a4={}
-a5=A.d2("0.9.76",$.cH)
-if(a5)A.K(A.dA("0.9.76"))
+a5=A.d2("0.9.77",$.cH)
+if(a5)A.K(A.dA("0.9.77"))
 a5=$.bx
 if(a5==null)a5=$.bx=new A.di()
 if(a5.kw(new A.J(Date.now(),0,!1)))throw A.o(A.i6(A.i7().j6("teslim edilemez")))
@@ -20633,8 +20633,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$bfp,r)},
 In(a,b){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e
 var $async$In=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:f=A.d2("0.9.76",$.cH)
-if(f)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:f=A.d2("0.9.77",$.cH)
+if(f)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$In)
 case 2:q=d
@@ -20927,8 +20927,8 @@ y7(a){return A.d45(a)},
 d45(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e
 var $async$y7=A.i(function(b,c){if(b===1)return A.j(c,r)
 for(;;)switch(s){case 0:f={}
-e=A.d2("0.9.76",$.cH)
-if(e)A.K(A.dA("0.9.76"))
+e=A.d2("0.9.77",$.cH)
+if(e)A.K(A.dA("0.9.77"))
 if(B.e.bd(a,"ariza:"))throw A.o(A.az("Onar\u0131m hareketi buradan silinemez \u2014 Onar\u0131m ekran\u0131ndan silin."))
 s=3
 return A.b(A.al(),$async$y7)
@@ -21190,8 +21190,8 @@ var $async$tN=A.i(function(d4,d5){if(d4===1)return A.j(d5,r)
 for(;;)switch(s){case 0:c8={}
 c8.a=d3
 if(d3.length===0){s=1
-break}p=A.d2("0.9.76",$.cH)
-if(p)A.K(A.dA("0.9.76"))
+break}p=A.d2("0.9.77",$.cH)
+if(p)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$tN)
 case 3:o=d5
@@ -21364,8 +21364,8 @@ a1j(a,b,c,d,e){return A.d4k(a,b,c,d,e)},
 d4k(a,b,c,d,e){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i
 var $async$a1j=A.i(function(f,g){if(f===1)return A.j(g,r)
 for(;;)switch(s){case 0:j={}
-i=A.d2("0.9.76",$.cH)
-if(i)A.K(A.dA("0.9.76"))
+i=A.d2("0.9.77",$.cH)
+if(i)A.K(A.dA("0.9.77"))
 if(a.length!==0)i=c==null&&b==null
 else i=!0
 if(i){q=0
@@ -21480,8 +21480,8 @@ k.$3("cariler","update",p)}case 1:return A.k(q,r)}})
 return A.l($async$Pv,r)},
 aq3(a,b,c){var s=0,r=A.m(t.H),q,p,o,n
 var $async$aq3=A.i(function(d,e){if(d===1)return A.j(e,r)
-for(;;)switch(s){case 0:o=A.d2("0.9.76",$.cH)
-if(o)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:o=A.d2("0.9.77",$.cH)
+if(o)A.K(A.dA("0.9.77"))
 p=B.e.u(c)
 if(p.length===0){s=1
 break}n=A
@@ -21493,8 +21493,8 @@ case 3:case 1:return A.k(q,r)}})
 return A.l($async$aq3,r)},
 Im(a,b,c,a0){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$Im=A.i(function(a1,a2){if(a1===1)return A.j(a2,r)
-for(;;)switch(s){case 0:d=A.d2("0.9.76",$.cH)
-if(d)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:d=A.d2("0.9.77",$.cH)
+if(d)A.K(A.dA("0.9.77"))
 p=B.e.u(c)
 o=B.e.u(a0)
 if(p.length===0||o.length===0||p===o){q=0
@@ -21547,8 +21547,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$a1k,r)},
 Ik(a4,a5){var s=0,r=A.m(t.BC),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
 var $async$Ik=A.i(function(a6,a7){if(a6===1)return A.j(a7,r)
-for(;;)switch(s){case 0:a3=A.d2("0.9.76",$.cH)
-if(a3)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:a3=A.d2("0.9.77",$.cH)
+if(a3)A.K(A.dA("0.9.77"))
 p=B.e.u(a5)
 if(p.length===0)p=null
 s=3
@@ -21629,8 +21629,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$aqc,r)},
 Il(a,b,c){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$Il=A.i(function(a0,a1){if(a0===1)return A.j(a1,r)
-for(;;)switch(s){case 0:d=A.d2("0.9.76",$.cH)
-if(d)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:d=A.d2("0.9.77",$.cH)
+if(d)A.K(A.dA("0.9.77"))
 p=B.e.u(c)
 if(p.length===0){q=0
 s=1
@@ -21672,8 +21672,8 @@ d48(b9){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a
 var $async$vG=A.i(function(c0,c1){if(c0===1)return A.j(c1,r)
 for(;;)switch(s){case 0:b5={}
 if(b9.length===0){s=1
-break}p=A.d2("0.9.76",$.cH)
-if(p)A.K(A.dA("0.9.76"))
+break}p=A.d2("0.9.77",$.cH)
+if(p)A.K(A.dA("0.9.77"))
 for(p=b9.length,o=0;o<b9.length;b9.length===p||(0,A.L)(b9),++o){n=b9[o]
 m=$.bx
 if(m==null)m=$.bx=new A.di()
@@ -21804,8 +21804,8 @@ tO(a,b){return A.d4b(a,b)},
 d4b(a5,a6){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4
 var $async$tO=A.i(function(a7,a8){if(a7===1)return A.j(a8,r)
 for(;;)switch(s){case 0:a0={}
-a1=A.d2("0.9.76",$.cH)
-if(a1)A.K(A.dA("0.9.76"))
+a1=A.d2("0.9.77",$.cH)
+if(a1)A.K(A.dA("0.9.77"))
 a1=$.bx
 if(a1==null)a1=$.bx=new A.di()
 q=a5.at
@@ -22022,8 +22022,8 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$r2,r)},
 Pz(a,b){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g
 var $async$Pz=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:g=A.d2("0.9.76",$.cH)
-if(g)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:g=A.d2("0.9.77",$.cH)
+if(g)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Pz)
 case 3:p=d
@@ -22057,8 +22057,8 @@ Pw(a){return A.d46(a)},
 d46(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g
 var $async$Pw=A.i(function(b,c){if(b===1)return A.j(c,r)
 for(;;)switch(s){case 0:h={}
-g=A.d2("0.9.76",$.cH)
-if(g)A.K(A.dA("0.9.76"))
+g=A.d2("0.9.77",$.cH)
+if(g)A.K(A.dA("0.9.77"))
 g=$.bx
 if(g==null)g=$.bx=new A.di()
 p=a.at
@@ -22094,8 +22094,8 @@ if(h!=null)h.$3("urunler","update",A.E(["id",l,"stok_miktari",i,"guncelleme_zama
 return A.l($async$Pw,r)},
 CJ(a){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$CJ=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:d=A.d2("0.9.76",$.cH)
-if(d)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:d=A.d2("0.9.77",$.cH)
+if(d)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$CJ)
 case 3:p=c
@@ -22299,8 +22299,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$ih,r)},
 yb(a8){var s=0,r=A.m(t.S),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7
 var $async$yb=A.i(function(a9,b0){if(a9===1){o.push(b0)
-s=p}for(;;)switch(s){case 0:a6=A.d2("0.9.76",$.cH)
-if(a6)A.K(A.dA("0.9.76"))
+s=p}for(;;)switch(s){case 0:a6=A.d2("0.9.77",$.cH)
+if(a6)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$yb)
 case 3:n=b0
@@ -22368,8 +22368,8 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$yb,r)},
 PK(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k
 var $async$PK=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$PK)
 case 2:q=c
@@ -22391,8 +22391,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$PK,r)},
 tS(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g
 var $async$tS=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:h=A.d2("0.9.76",$.cH)
-if(h)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:h=A.d2("0.9.77",$.cH)
+if(h)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$tS)
 case 2:q=c
@@ -22503,8 +22503,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$vM,r)},
 IA(a,b){var s=0,r=A.m(t.S),q,p,o,n,m,l
 var $async$IA=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:l=A.d2("0.9.76",$.cH)
-if(l)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:l=A.d2("0.9.77",$.cH)
+if(l)A.K(A.dA("0.9.77"))
 l=$.bx
 if(l==null)l=$.bx=new A.di()
 if(l.fD(a.r))throw A.o(A.i6(A.i7().gQN()))
@@ -22552,8 +22552,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$bj0,r)},
 a1M(a,b){var s=0,r=A.m(t.H),q,p,o
 var $async$a1M=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:o=A.d2("0.9.76",$.cH)
-if(o)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:o=A.d2("0.9.77",$.cH)
+if(o)A.K(A.dA("0.9.77"))
 q=a.a
 if(q==null)throw A.o(A.b_("updateTeklif: id null",null))
 s=2
@@ -22568,8 +22568,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$a1M,r)},
 PV(a,b){var s=0,r=A.m(t.H),q,p,o,n
 var $async$PV=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:n=A.d2("0.9.76",$.cH)
-if(n)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:n=A.d2("0.9.77",$.cH)
+if(n)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$PV)
 case 2:q=d
@@ -22585,8 +22585,8 @@ case 4:return A.k(null,r)}})
 return A.l($async$PV,r)},
 Iz(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f
 var $async$Iz=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:g=A.d2("0.9.76",$.cH)
-if(g)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:g=A.d2("0.9.77",$.cH)
+if(g)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Iz)
 case 3:p=c
@@ -22619,8 +22619,8 @@ return A.l($async$Iz,r)},
 tV(a,b,c,d){return A.d4X(a,b,c,d)},
 d4X(b3,b4,b5,b6){var s=0,r=A.m(t.S),q,p=2,o=[],n=[],m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2
 var $async$tV=A.i(function(b7,b8){if(b7===1){o.push(b8)
-s=p}for(;;)switch(s){case 0:b1=A.d2("0.9.76",$.cH)
-if(b1)A.K(A.dA("0.9.76"))
+s=p}for(;;)switch(s){case 0:b1=A.d2("0.9.77",$.cH)
+if(b1)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.vM(b3),$async$tV)
 case 3:g=b8
@@ -22888,8 +22888,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$ary,r)},
 Qk(a,b){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e
 var $async$Qk=A.i(function(c,d){if(c===1)return A.j(d,r)
-for(;;)switch(s){case 0:f=A.d2("0.9.76",$.cH)
-if(f)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:f=A.d2("0.9.77",$.cH)
+if(f)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Qk)
 case 3:p=d
@@ -22920,8 +22920,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$Qk,r)},
 Qj(a){var s=0,r=A.m(t.S),q,p,o,n,m,l,k,j,i,h,g,f,e
 var $async$Qj=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:f=A.d2("0.9.76",$.cH)
-if(f)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:f=A.d2("0.9.77",$.cH)
+if(f)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$Qj)
 case 3:p=c
@@ -23060,8 +23060,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$arA,r)},
 IZ(a){var s=0,r=A.m(t.S),q,p,o,n,m,l,k
 var $async$IZ=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:k=A.d2("0.9.76",$.cH)
-if(k)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:k=A.d2("0.9.77",$.cH)
+if(k)A.K(A.dA("0.9.77"))
 s=3
 return A.b(A.al(),$async$IZ)
 case 3:p=c
@@ -23087,8 +23087,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$IZ,r)},
 D5(a,a0){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$D5=A.i(function(a1,a2){if(a1===1)return A.j(a2,r)
-for(;;)switch(s){case 0:b=A.d2("0.9.76",$.cH)
-if(b)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:b=A.d2("0.9.77",$.cH)
+if(b)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$D5)
 case 2:q=a2
@@ -23268,8 +23268,8 @@ if(s.length===0)return null
 return"Bu \xfcr\xfcn "+B.f.an(s,", ")+" i\xe7inde kullan\u0131l\u0131yor \u2014 silinemez. \xd6nce ilgili belgelerden \xe7\u0131kar\u0131n veya \xfcr\xfcn\xfc pasife al\u0131n."},
 D3(a){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i
 var $async$D3=A.i(function(b,c){if(b===1)return A.j(c,r)
-for(;;)switch(s){case 0:j=A.d2("0.9.76",$.cH)
-if(j)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:j=A.d2("0.9.77",$.cH)
+if(j)A.K(A.dA("0.9.77"))
 s=2
 return A.b(A.al(),$async$D3)
 case 2:q=c
@@ -24771,7 +24771,7 @@ cKm(a){var s,r,q,p,o,n
 if(a.length===0)return!1
 s=new A.bED()
 r=s.$1(a)
-q=s.$1("0.9.76")
+q=s.$1("0.9.77")
 for(p=J.w(r),o=J.w(q),n=0;n<3;++n){if(p.h(r,n)<o.h(q,n))return!0
 if(p.h(r,n)>o.h(q,n))return!1}return!1},
 d7p(a){var s,r,q=A.c5(a)
@@ -30993,7 +30993,7 @@ qM(){var s=0,r=A.m(t._P),q,p=2,o=[],n=[],m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
 var $async$qM=A.i(function(a3,a4){if(a3===1){o.push(a4)
 s=p}for(;;)switch(s){case 0:if($.cx9){q=A.A(t.N,t.S)
 s=1
-break}i=A.d2("0.9.76",$.cH)
+break}i=A.d2("0.9.77",$.cH)
 if(i){q=A.A(t.N,t.S)
 s=1
 break}$.cx9=!0
@@ -68393,8 +68393,8 @@ case 1:return A.k(q,r)}})
 return A.l($async$aNE,r)},
 zW(a,b,a0){var s=0,r=A.m(t.H),q,p,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$zW=A.i(function(a1,a2){if(a1===1)return A.j(a2,r)
-for(;;)switch(s){case 0:c=A.d2("0.9.76",$.cH)
-if(c)A.K(A.dA("0.9.76"))
+for(;;)switch(s){case 0:c=A.d2("0.9.77",$.cH)
+if(c)A.K(A.dA("0.9.77"))
 p=$.bp().a
 if(p!=null)c=!(p.f==="admin"||p.p1)
 else c=!1
@@ -97614,7 +97614,7 @@ Nk(a){return this.biG(a)},
 biG(a){var s=0,r=A.m(t.H),q,p=this,o,n
 var $async$Nk=A.i(function(b,c){if(b===1)return A.j(c,r)
 for(;;)switch(s){case 0:if(p.c==null||p.fr){s=1
-break}if(p.dy){o=A.d2("0.9.76",$.cH)
+break}if(p.dy){o=A.d2("0.9.77",$.cH)
 o=!o}else o=!1
 if(o){s=1
 break}p.fr=p.dy=!0
@@ -98890,7 +98890,7 @@ l=l==null?p:l.b
 k=t.p
 l=A.D(A.a([B.aGk,B.iU,new A.hm(1,B.d4,A.h(l==null?"Depo Y\xf6netimi":l,1,B.ac,p,p,B.hj,p,p,p),p)],k),B.r,B.l,B.q,0,p)
 q=r?B.asv:B.bJ
-return A.P(A.a([l,A.h("Depo Y\xf6netimi  \u2022  v0.9.76  \u2022  "+s,p,p,p,p,A.I(p,p,q,p,p,p,p,p,p,p,p,10,p,p,r?B.a4:B.aN,p,p,!0,p,p,p,p,p,p,p,p),p,p,p)],k),B.S,B.l,B.q,0,B.u)}}
+return A.P(A.a([l,A.h("Depo Y\xf6netimi  \u2022  v0.9.77  \u2022  "+s,p,p,p,p,A.I(p,p,q,p,p,p,p,p,p,p,p,10,p,p,r?B.a4:B.aN,p,p,!0,p,p,p,p,p,p,p,p),p,p,p)],k),B.S,B.l,B.q,0,B.u)}}
 A.bTf.prototype={
 $1(a){return this.aDD(a)},
 aDD(a2){var s=0,r=A.m(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
@@ -98946,7 +98946,7 @@ s.d=A.ke(B.ht,new A.ccc(s))},
 m(){var s=this.d
 if(s!=null)s.a9(0)
 this.aq()},
-tT(){var s=this,r=A.d2("0.9.76",$.cH)
+tT(){var s=this,r=A.d2("0.9.77",$.cH)
 if(s.c==null)return
 if(r!==s.e)s.n(new A.cc7(s,r))
 if(r&&!$.cKZ){$.cKZ=!0
@@ -98962,7 +98962,7 @@ return A.l($async$Xc,r)},
 L(a){var s,r=null
 if(!this.e)return B.bV
 s=this.a.c
-return A.d4(r,A.ej(!1,B.aI,!0,r,new A.Z(B.vd,A.D(A.a([B.aI7,B.G,A.U(A.h(A.d2("0.9.76",$.cH)?"\u26a0 S\xfcr\xfcm\xfcn\xfcz \xe7ok eski (v0.9.76) \u2014 i\u015flemler kilitli. G\xdcNCELLE":"\u26a0 Yeni s\xfcr\xfcm (v"+A.e($.a1r)+") yay\u0131nland\u0131 \u2014 y\xfcklenene kadar yeni kay\u0131t yap\u0131lamaz. G\xdcNCELLE",r,r,r,r,B.c1A,r,r,r),1),B.aIQ],t.p),B.r,B.l,B.q,0,r),r),B.w,B.ix,0,r,r,r,r,r,B.bU),B.D,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s,r,r,r,r,r,r,!1,B.aW)}}
+return A.d4(r,A.ej(!1,B.aI,!0,r,new A.Z(B.vd,A.D(A.a([B.aI7,B.G,A.U(A.h(A.d2("0.9.77",$.cH)?"\u26a0 S\xfcr\xfcm\xfcn\xfcz \xe7ok eski (v0.9.77) \u2014 i\u015flemler kilitli. G\xdcNCELLE":"\u26a0 Yeni s\xfcr\xfcm (v"+A.e($.a1r)+") yay\u0131nland\u0131 \u2014 y\xfcklenene kadar yeni kay\u0131t yap\u0131lamaz. G\xdcNCELLE",r,r,r,r,B.c1A,r,r,r),1),B.aIQ],t.p),B.r,B.l,B.q,0,r),r),B.w,B.ix,0,r,r,r,r,r,B.bU),B.D,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s,r,r,r,r,r,r,!1,B.aW)}}
 A.ccc.prototype={
 $1(a){return this.a.tT()},
 $S:42}
@@ -98973,7 +98973,7 @@ A.cc8.prototype={
 $1(a){return this.a.Xc()},
 $S:10}
 A.ccb.prototype={
-$1(a){var s=null,r=A.h(A.d2("0.9.76",$.cH)?"S\xfcr\xfcm\xfcn\xfcz (v0.9.76) \xe7ok eski. Veri g\xfcvenli\u011fi i\xe7in kay\u0131t i\u015flemleri ve senkron g\xf6nderimi kilitlendi. Verilerinizi g\xf6r\xfcnt\xfclemeye devam edebilirsiniz; devam etmek i\xe7in uygulamay\u0131 g\xfcncelleyin.":"Yeni s\xfcr\xfcm (v"+A.e($.a1r)+") yay\u0131nland\u0131. G\xfcncellemeyi y\xfckleyene kadar YEN\u0130 KAYIT yap\u0131lamaz. \xd6nceki kay\u0131tlar\u0131n\u0131z di\u011fer cihazlara g\xf6nderilmeye devam eder; verilerinizi g\xf6r\xfcnt\xfcleyebilirsiniz.",s,s,s,s,s,s,s,s)
+$1(a){var s=null,r=A.h(A.d2("0.9.77",$.cH)?"S\xfcr\xfcm\xfcn\xfcz (v0.9.77) \xe7ok eski. Veri g\xfcvenli\u011fi i\xe7in kay\u0131t i\u015flemleri ve senkron g\xf6nderimi kilitlendi. Verilerinizi g\xf6r\xfcnt\xfclemeye devam edebilirsiniz; devam etmek i\xe7in uygulamay\u0131 g\xfcncelleyin.":"Yeni s\xfcr\xfcm (v"+A.e($.a1r)+") yay\u0131nland\u0131. G\xfcncellemeyi y\xfckleyene kadar YEN\u0130 KAYIT yap\u0131lamaz. \xd6nceki kay\u0131tlar\u0131n\u0131z di\u011fer cihazlara g\xf6nderilmeye devam eder; verilerinizi g\xf6r\xfcnt\xfcleyebilirsiniz.",s,s,s,s,s,s,s,s)
 return A.b2(A.a([A.aK(B.eF,s,s,s,new A.cc9(a),s,s),A.dK(B.caS,new A.cca(this.a,a),s)],t.p),s,r,s,s,B.c8c,s)},
 $S:3}
 A.cc9.prototype={
@@ -134456,7 +134456,7 @@ case 6:case 1:return A.k(q,r)
 case 2:return A.j(o.at(-1),r)}})
 return A.l($async$B7,r)},
 bj4(a){var s,r,q,p
-try{s=this.aoZ("0.9.76")
+try{s=this.aoZ("0.9.77")
 r=this.aoZ(a)
 for(q=0;q<3;++q){if(J.d(r,q)>J.d(s,q))return!0
 if(J.d(r,q)<J.d(s,q))return!1}return!1}catch(p){return!1}},
@@ -135997,7 +135997,7 @@ return A.l($async$Ib,r)},
 A2(){var s=0,r=A.m(t.S),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5
 var $async$A2=A.i(function(a6,a7){if(a6===1){o.push(a7)
 s=p}for(;;)switch(s){case 0:p=4
-c=A.d2("0.9.76",$.cH)
+c=A.d2("0.9.77",$.cH)
 if(c){q=0
 s=1
 break}s=7
@@ -136082,7 +136082,7 @@ return A.l($async$A2,r)},
 t5(){var s=0,r=A.m(t.S),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9
 var $async$t5=A.i(function(c0,c1){if(c0===1){o.push(c1)
 s=p}for(;;)switch(s){case 0:p=4
-a1=A.d2("0.9.76",$.cH)
+a1=A.d2("0.9.77",$.cH)
 if(a1){q=0
 s=1
 break}s=7
@@ -136216,7 +136216,7 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$t5,r)},
 Eg(){var s=0,r=A.m(t.S),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
 var $async$Eg=A.i(function(a3,a4){if(a3===1){o.push(a4)
-s=p}for(;;)switch(s){case 0:a1=A.d2("0.9.76",$.cH)
+s=p}for(;;)switch(s){case 0:a1=A.d2("0.9.77",$.cH)
 if(a1){q=0
 s=1
 break}p=4
@@ -136278,7 +136278,7 @@ case 2:return A.j(o.at(-1),r)}})
 return A.l($async$Eg,r)},
 IX(){var s=0,r=A.m(t.S),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d,c,b,a
 var $async$IX=A.i(function(a0,a1){if(a0===1){o.push(a1)
-s=p}for(;;)switch(s){case 0:b=A.d2("0.9.76",$.cH)
+s=p}for(;;)switch(s){case 0:b=A.d2("0.9.77",$.cH)
 if(b){q=0
 s=1
 break}p=4
@@ -136657,7 +136657,7 @@ d=(d==null?$.d_=new A.f2():d).c
 if(d==null)d="\u015eube se\xe7ilmedi"
 b=t.N
 a=a2
-q=A.E(["sube",d,"kullanici",$.hJ,"surum","0.9.76","platform",A.bV().b,"zaman",new A.J(Date.now(),0,!1).af().am($.b7.a).Z(),"saglik",A.E(["kuyruk",f,"kuyruk_basarisiz",e,"sema_eksik",n.a.a,"son_onarim",n.w.a],b,t.K),"hatalar",A.hv(a,0,A.jl(15,"count",t.S),A.aa(a).c).h0(0)],b,t.z)
+q=A.E(["sube",d,"kullanici",$.hJ,"surum","0.9.77","platform",A.bV().b,"zaman",new A.J(Date.now(),0,!1).af().am($.b7.a).Z(),"saglik",A.E(["kuyruk",f,"kuyruk_basarisiz",e,"sema_eksik",n.a.a,"son_onarim",n.w.a],b,t.K),"hatalar",A.hv(a,0,A.jl(15,"count",t.S),A.aa(a).c).h0(0)],b,t.z)
 s=1
 break
 case 1:return A.k(q,r)
@@ -138602,7 +138602,7 @@ bob(a6,a7,a8){var s=0,r=A.m(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,
 var $async$kM=A.i(function(a9,b0){if(a9===1){o.push(b0)
 s=p}for(;;)switch(s){case 0:if(J.q($.b4.h(0,B.ajA),!0)){s=1
 break}if($.cIN){s=1
-break}s=A.d2("0.9.76",$.cH)?3:4
+break}s=A.d2("0.9.77",$.cH)?3:4
 break
 case 3:s=B.f.q(B.kd,a7)||a7==="_batch_urun_ad_guncelle"||a7==="_batch_cari_guncelle"?5:6
 break
@@ -139491,7 +139491,7 @@ return this.bpi()},
 bpi(){var s=0,r=A.m(t.S),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2
 var $async$qn=A.i(function(c4,c5){if(c4===1){o.push(c5)
 s=p}for(;;)switch(s){case 0:b9=null
-if(A.d2("0.9.76",$.cH)){a1=b9
+if(A.d2("0.9.77",$.cH)){a1=b9
 if(a1!=null)a1.$1("S\xfcr\xfcm eski \u2014 eksik kay\u0131t g\xf6nderimi kilitli (g\xfcncelleyin)")
 q=0
 s=1
@@ -139658,7 +139658,7 @@ nd(a,b){return this.bxD(a,b)},
 bxD(e9,f0){var s=0,r=A.m(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8
 var $async$nd=A.i(function(f2,f3){if(f2===1){o.push(f3)
 s=p}for(;;)switch(s){case 0:e4={}
-if(A.d2("0.9.76",$.cH)){f0.$1("Uygulaman\u0131z eski \u2014 tam senkronizasyon kilitli. G\xfcncelleyin.")
+if(A.d2("0.9.77",$.cH)){f0.$1("Uygulaman\u0131z eski \u2014 tam senkronizasyon kilitli. G\xfcncelleyin.")
 s=1
 break}if(!n.w){f0.$1("Supabase ba\u011flant\u0131s\u0131 kurulu de\u011fil")
 s=1
@@ -139979,7 +139979,7 @@ case 1:return A.j(p.at(-1),r)}})
 return A.l($async$pC,r)},
 lj(){var s=0,r=A.m(t.H),q,p=2,o=[],n=[],m=this,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6
 var $async$lj=A.i(function(b7,b8){if(b7===1){o.push(b8)
-s=p}for(;;)switch(s){case 0:if(A.d2("0.9.76",$.cH)){s=1
+s=p}for(;;)switch(s){case 0:if(A.d2("0.9.77",$.cH)){s=1
 break}if(!m.as||!m.w){s=1
 break}if(m.cP){s=1
 break}m.cP=!0
@@ -140325,7 +140325,7 @@ case 1:return A.k(q,r)}})
 return A.l($async$xC,r)},
 jx(){var s=0,r=A.m(t.H),q,p=2,o=[],n=[],m=this,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7
 var $async$jx=A.i(function(b8,b9){if(b8===1){o.push(b9)
-s=p}for(;;)switch(s){case 0:if(A.d2("0.9.76",$.cH)){s=1
+s=p}for(;;)switch(s){case 0:if(A.d2("0.9.77",$.cH)){s=1
 break}a2=!0
 if(!m.ax)if(m.as)if(m.w){a2=$.m1()
 a3=a2.r

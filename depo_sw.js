@@ -1,6 +1,6 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.76-20260926161352';
+const SURUM = 'depo-0.9.77-20260928144107';
 const DOSYALAR = [
   './',
   'assets/AssetManifest.bin',
