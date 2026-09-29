@@ -1,55 +1,69 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.77-20260928144107';
+const SURUM = 'depo-0.9.77-20260929112835';
+// [yol, icerik parmak izi] â€” onbellek anahtari 'yol?h=iz' (eslesmede
+// ignoreSearch kullanildigindan sayfa istekleri etkilenmez).
 const DOSYALAR = [
-  './',
-  'assets/AssetManifest.bin',
-  'assets/AssetManifest.bin.json',
-  'assets/assets/fonts/NotoSans-Bold.ttf',
-  'assets/assets/fonts/NotoSans-Regular.ttf',
-  'assets/assets/teklif/c4.jpeg',
-  'assets/assets/teklif/hager.png',
-  'assets/assets/teklif/interra.png',
-  'assets/assets/teklif/knx.jpeg',
-  'assets/assets/teklif/powerline.png',
-  'assets/assets/templates/ariza_formu.xlsx',
-  'assets/assets/templates/teklif_sablonu.xlsx',
-  'assets/FontManifest.json',
-  'assets/fonts/MaterialIcons-Regular.otf',
-  'assets/packages/cupertino_icons/assets/CupertinoIcons.ttf',
-  'assets/shaders/ink_sparkle.frag',
-  'assets/shaders/stretch_effect.frag',
-  'canvaskit/skwasm_heavy.js',
-  'canvaskit/skwasm_heavy.wasm',
-  'favicon.png',
-  'flutter.js',
-  'flutter_bootstrap.js',
-  'icons/Icon-192.png',
-  'icons/Icon-512.png',
-  'icons/Icon-maskable-192.png',
-  'icons/Icon-maskable-512.png',
-  'index.html',
-  'main.dart.mjs',
-  'main.dart.wasm',
-  'manifest.json',
-  'sqflite_sw.js',
-  'sqlite3.wasm',
-  'vendor/zxing-0.21.3.min.js',
-  'vendor/zxing-LICENSE.txt',
-  'version.json',
+  ['./', 'd8032e746ac88b15'],
+  ['assets/AssetManifest.bin', 'db9fde3bc0ced0a7'],
+  ['assets/AssetManifest.bin.json', '2f68cd8c4dead63e'],
+  ['assets/assets/fonts/NotoSans-Bold.ttf', 'cf382cad35e731fc'],
+  ['assets/assets/fonts/NotoSans-Regular.ttf', '3be6b371cef19ed6'],
+  ['assets/assets/teklif/c4.jpeg', 'ef1c72d1524f2993'],
+  ['assets/assets/teklif/hager.png', 'd530d562ea61c4f5'],
+  ['assets/assets/teklif/interra.png', '165f0d423566ef41'],
+  ['assets/assets/teklif/knx.jpeg', '1336dfa9a84d5bec'],
+  ['assets/assets/teklif/powerline.png', 'a81dbe7200d226c8'],
+  ['assets/assets/templates/ariza_formu.xlsx', 'f4ee5e762220b3ec'],
+  ['assets/assets/templates/teklif_sablonu.xlsx', 'ce889afa269be8d3'],
+  ['assets/FontManifest.json', 'cd7e03645bc44b2d'],
+  ['assets/fonts/MaterialIcons-Regular.otf', '60945de13cd0dbc0'],
+  ['assets/packages/cupertino_icons/assets/CupertinoIcons.ttf', '3d90c370aa4cf00d'],
+  ['assets/shaders/ink_sparkle.frag', '5aee0e4ff369c055'],
+  ['assets/shaders/stretch_effect.frag', 'c723fbb5b9a3456b'],
+  ['canvaskit/skwasm_heavy.js', '7a1aa20e765441b2'],
+  ['canvaskit/skwasm_heavy.wasm', '33f5c52d1612df0a'],
+  ['favicon.png', '7f201137e1514bbb'],
+  ['flutter.js', 'a483fd28f51ed2fa'],
+  ['flutter_bootstrap.js', '93be0370da525793'],
+  ['icons/Icon-192.png', 'fe651cf5393b36f0'],
+  ['icons/Icon-512.png', 'e0459aacdef87583'],
+  ['icons/Icon-maskable-192.png', '32ff1d29f8102e3f'],
+  ['icons/Icon-maskable-512.png', '0a22c7f69a0829a5'],
+  ['index.html', 'd8032e746ac88b15'],
+  ['main.dart.mjs', '7dbe7be32af17fdc'],
+  ['main.dart.wasm', '837c57733bf4293e'],
+  ['manifest.json', '42500596ad8aa888'],
+  ['sqflite_sw.js', '946284ef26b62b59'],
+  ['sqlite3.wasm', '922a76b182b6af69'],
+  ['vendor/zxing-0.21.3.min.js', 'd7cc8f69dd70bdcf'],
+  ['vendor/zxing-LICENSE.txt', '849b3ff4527ff587'],
+  ['version.json', 'e597ac90e5b1ae3d'],
 ];
+
+// Zayif mobil agda tek dosya yarida kalirsa TUM kurulum dusuyordu (telefon
+// eski surumde takili kalip her acilista 17 MB'i bastan deniyordu) -> 3 deneme.
+const getir = (f, deneme) =>
+  fetch(new Request(f + '?v=' + SURUM, { cache: 'reload' }))
+    .then((y) => { if (!y.ok) throw new Error(f + ' ' + y.status); return y; })
+    .catch((err) => {
+      if (deneme >= 3) throw err;
+      return new Promise((ok) => setTimeout(ok, deneme * 1500))
+        .then(() => getir(f, deneme + 1));
+    });
 
 self.addEventListener('install', (e) => {
   // ?v=SURUM: GitHub Pages CDN'inin ESKI kopyasi yeni onbellege girmesin
-  // (sorgu dizesi CDN'de ayri anahtar). Eslesmede ignoreSearch kullanilir.
+  // (sorgu dizesi CDN'de ayri anahtar). Parmak izi AYNI dosya onceki
+  // surumun onbelleginden kopyalanir (yeniden inmez).
   e.waitUntil(
     caches.open(SURUM)
-      .then((c) => Promise.all(DOSYALAR.map((f) =>
-        fetch(new Request(f + '?v=' + SURUM, { cache: 'reload' }))
-          .then((yanit) => {
-            if (!yanit.ok) throw new Error(f + ' ' + yanit.status);
-            return c.put(new Request(f), yanit);
-          }))))
+      .then((c) => Promise.all(DOSYALAR.map(([f, iz]) => {
+        const anahtar = new Request(f + '?h=' + iz);
+        return caches.match(anahtar)
+          .then((eski) => eski ? eski : getir(f, 1))
+          .then((yanit) => c.put(anahtar, yanit));
+      })))
       .then(() => self.skipWaiting())
   );
 });

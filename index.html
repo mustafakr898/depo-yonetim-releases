@@ -55,24 +55,101 @@
     if (navigator.storage && navigator.storage.persist) {
       navigator.storage.persist().catch(function () {});
     }
+    // 29.09 (saha: HASAN'ın iPhone'u 0.9.74'te takılı kaldı — yeni sürümün
+    // önbellek çalışanı zayıf ağda kurulamıyor, telefon ESKİ önbellekten
+    // açılmaya devam ediyordu). Bu sayfa her açılışta ağdan gelir (çalışan
+    // sayfa isteğini önce ağa sorar) → yayın sürümünü taşır; çalışan
+    // (önbellekteki) uygulama sürümü version.json'dan okunur.
+    var DEPO_SAYFA_SURUM = '0.9.77';
+    var depoOnarimAnahtar = 'depo-onarim-son';
+    // İnternet VARSA eski önbelleği bırakıp yeni sürümü doğrudan ağdan açar
+    // (çevrimdışıyken ASLA — önbelleksiz uygulama açılamaz). En çok 10 dk'da
+    // bir (döngü koruması).
+    // sessiz=true (kendini onarma): süre dolmadıysa HİÇBİR ŞEY yapmaz — düz
+    // yenileme aynı eski sürümü açıp döngüye girerdi (yayından hemen sonra
+    // Pages önbelleği yeni sayfayı/eski çalışanı birkaç dk birlikte verebilir).
+    window.depoZorlaYenile = function (sessiz) {
+      var yenile = function () { window.location.reload(); };
+      try {
+        var son = +(localStorage.getItem(depoOnarimAnahtar) || 0);
+        if (Date.now() - son < 600000) { if (!sessiz) yenile(); return; }
+        localStorage.setItem(depoOnarimAnahtar, String(Date.now()));
+      } catch (e) {}
+      fetch('https://raw.githubusercontent.com/mustafakr898/depo-yonetim-releases/main/version.json?t=' + Date.now(), { cache: 'no-store' })
+        .then(function (y) {
+          if (!y.ok) { yenile(); return; }
+          // Yalnız çalışan kaldırılır: sayfa artık ağdan açılır. Önbellek
+          // SİLİNMEZ — yeniden kurulan çalışan değişmeyen dosyaları oradan
+          // kopyalar (parmak izi); eski önbellekleri kendi temizler.
+          return navigator.serviceWorker.getRegistrations()
+            .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+            .then(yenile, yenile);
+        })
+        .catch(yenile);
+    };
     // Güncelleme: yeni sürümün önbellek çalışanı KURULUP DEVREYE GİRENE kadar
-    // bekler (en çok 60 sn), sonra yeniler — yoksa ilk yenileme eski
-    // önbellekten ESKİ sürümü açıyordu. Uygulama (Dart) bunu çağırır.
+    // bekler (en çok 45 sn), sonra yeniler. 29.09: devreye GİREMEDİYSE
+    // (kurulum yarıda kaldı) düz yenileme yine ESKİ sürümü açıyordu → internet
+    // varsa eski önbellek bırakılıp yeni sürüm ağdan açılır. Uygulama (Dart)
+    // bunu çağırır.
     window.depoGuncelleVeYenile = function () {
       var yenile = function () { window.location.reload(); };
       if (!('serviceWorker' in navigator)) { yenile(); return; }
       navigator.serviceWorker.getRegistration().then(function (r) {
         if (!r) { yenile(); return; }
         var bitti = false;
-        var son = function () { if (!bitti) { bitti = true; yenile(); } };
-        setTimeout(son, 60000);
-        navigator.serviceWorker.addEventListener('controllerchange', son);
+        var basarili = function () { if (!bitti) { bitti = true; yenile(); } };
+        var basarisiz = function () {
+          if (!bitti) { bitti = true; window.depoZorlaYenile(); }
+        };
+        setTimeout(basarisiz, 45000);
+        navigator.serviceWorker.addEventListener('controllerchange', basarili);
         r.update().then(function () {
-          // Yeni sürüm yoksa (ya da hâlâ indirilmediyse) beklemenin anlamı yok.
-          if (!r.installing && !r.waiting) son();
-        }).catch(son);
+          // Yeni çalışan yoksa: ya zaten günceliz (düz yenileme) ya da kurulum
+          // sessizce düştü (sürüm karşılaştırması aşağıdaki kendini onarmada).
+          if (!r.installing && !r.waiting) basarili();
+        }).catch(basarisiz);
       }).catch(yenile);
     };
+    // KENDİNİ ONARMA: çalışan uygulama bu sayfanın sürümünden ESKİYSE önce
+    // normal güncelleme denenir (yeni çalışan devreye girince yenilenir);
+    // yeni çalışan yoksa / 45 sn'de devreye girmezse zorla yenileme (10 dk'da
+    // en çok bir, yalnız internet varken). Düz yenileme YOK (döngü olurdu).
+    // Önbellek çalışanı yoksa (ilk kurulum / yerel geliştirme) hiçbir şey yapmaz.
+    var depoOnar = function () {
+      navigator.serviceWorker.getRegistration().then(function (r) {
+        if (!r) return;
+        var bitti = false;
+        var tamam = function () { if (!bitti) { bitti = true; window.location.reload(); } };
+        // Tarayıcı yeni çalışanı bu adımdan ÖNCE kendisi kurup devreye almış
+        // olabilir (devreye girme bildirimi kaçmış) → önce yeniden bak: yeni
+        // sürüm artık sunuluyorsa düz yenileme yeter; değilse zorla.
+        var zorla = function () {
+          if (bitti) return;
+          bitti = true;
+          fetch('version.json').then(function (y) { return y.json(); }).then(function (v) {
+            if (v && v.version === DEPO_SAYFA_SURUM) { window.location.reload(); }
+            else { window.depoZorlaYenile(true); }
+          }).catch(function () { window.depoZorlaYenile(true); });
+        };
+        navigator.serviceWorker.addEventListener('controllerchange', tamam);
+        setTimeout(zorla, 45000);
+        r.update().then(function () {
+          if (!r.installing && !r.waiting) zorla();
+        }).catch(zorla);
+      }).catch(function () {});
+    };
+    window.addEventListener('load', function () {
+      if (DEPO_SAYFA_SURUM.indexOf('__') === 0) return; // yerel geliştirme
+      if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) return;
+      setTimeout(function () {
+        fetch('version.json').then(function (y) { return y.json(); }).then(function (v) {
+          var calisan = v && v.version;
+          if (!calisan || calisan === DEPO_SAYFA_SURUM) return;
+          depoOnar();
+        }).catch(function () {});
+      }, 5000);
+    });
   </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
