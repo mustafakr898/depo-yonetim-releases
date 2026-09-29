@@ -1,10 +1,10 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.77-20260929112835';
+const SURUM = 'depo-0.9.78-20260929125847';
 // [yol, icerik parmak izi] â€” onbellek anahtari 'yol?h=iz' (eslesmede
 // ignoreSearch kullanildigindan sayfa istekleri etkilenmez).
 const DOSYALAR = [
-  ['./', 'd8032e746ac88b15'],
+  ['./', '7da0b6a81029b551'],
   ['assets/AssetManifest.bin', 'db9fde3bc0ced0a7'],
   ['assets/AssetManifest.bin.json', '2f68cd8c4dead63e'],
   ['assets/assets/fonts/NotoSans-Bold.ttf', 'cf382cad35e731fc'],
@@ -30,15 +30,15 @@ const DOSYALAR = [
   ['icons/Icon-512.png', 'e0459aacdef87583'],
   ['icons/Icon-maskable-192.png', '32ff1d29f8102e3f'],
   ['icons/Icon-maskable-512.png', '0a22c7f69a0829a5'],
-  ['index.html', 'd8032e746ac88b15'],
+  ['index.html', '7da0b6a81029b551'],
   ['main.dart.mjs', '7dbe7be32af17fdc'],
-  ['main.dart.wasm', '837c57733bf4293e'],
+  ['main.dart.wasm', '24866246a93fb711'],
   ['manifest.json', '42500596ad8aa888'],
   ['sqflite_sw.js', '946284ef26b62b59'],
   ['sqlite3.wasm', '922a76b182b6af69'],
   ['vendor/zxing-0.21.3.min.js', 'd7cc8f69dd70bdcf'],
   ['vendor/zxing-LICENSE.txt', '849b3ff4527ff587'],
-  ['version.json', 'e597ac90e5b1ae3d'],
+  ['version.json', '6234138339756243'],
 ];
 
 // Zayif mobil agda tek dosya yarida kalirsa TUM kurulum dusuyordu (telefon

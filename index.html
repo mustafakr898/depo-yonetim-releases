@@ -60,7 +60,7 @@
     // açılmaya devam ediyordu). Bu sayfa her açılışta ağdan gelir (çalışan
     // sayfa isteğini önce ağa sorar) → yayın sürümünü taşır; çalışan
     // (önbellekteki) uygulama sürümü version.json'dan okunur.
-    var DEPO_SAYFA_SURUM = '0.9.77';
+    var DEPO_SAYFA_SURUM = '0.9.78';
     var depoOnarimAnahtar = 'depo-onarim-son';
     // İnternet VARSA eski önbelleği bırakıp yeni sürümü doğrudan ağdan açar
     // (çevrimdışıyken ASLA — önbelleksiz uygulama açılamaz). En çok 10 dk'da
@@ -124,13 +124,17 @@
         // Tarayıcı yeni çalışanı bu adımdan ÖNCE kendisi kurup devreye almış
         // olabilir (devreye girme bildirimi kaçmış) → önce yeniden bak: yeni
         // sürüm artık sunuluyorsa düz yenileme yeter; değilse zorla.
+        // Denetim (29.09): zorla yenileme önbellek çalışanını kaldırır — zayıf
+        // ağda telefon bir süre ÇEVRİMDIŞI açılamaz. Bu yüzden YALNIZ gerçekten
+        // takılı telefonda: aynı hedef sürüme geçemeyiş en az 30 dk sürüyorsa
+        // (yayın sonrası CDN gecikmesi / tek seferlik yavaşlık zorlamaz).
         var zorla = function () {
           if (bitti) return;
           bitti = true;
           fetch('version.json').then(function (y) { return y.json(); }).then(function (v) {
-            if (v && v.version === DEPO_SAYFA_SURUM) { window.location.reload(); }
-            else { window.depoZorlaYenile(true); }
-          }).catch(function () { window.depoZorlaYenile(true); });
+            if (v && v.version === DEPO_SAYFA_SURUM) { window.location.reload(); return; }
+            if (depoUzunSuredirEski()) window.depoZorlaYenile(true);
+          }).catch(function () {});
         };
         navigator.serviceWorker.addEventListener('controllerchange', tamam);
         setTimeout(zorla, 45000);
@@ -139,13 +143,35 @@
         }).catch(zorla);
       }).catch(function () {});
     };
+    // Eski sürümde ilk görülme zamanı (hedef sürüm başına). Tarayıcı hafızası
+    // yoksa (özel mod) 'uzun süredir' SAYILMAZ → zorlanmaz (güvenli taraf).
+    var depoEskiAnahtar = 'depo-eski-surum-ilk';
+    var depoEskiIsaretle = function (eski) {
+      try {
+        if (!eski) { localStorage.removeItem(depoEskiAnahtar); return; }
+        var k = JSON.parse(localStorage.getItem(depoEskiAnahtar) || 'null');
+        if (!k || k.hedef !== DEPO_SAYFA_SURUM) {
+          localStorage.setItem(depoEskiAnahtar,
+              JSON.stringify({ hedef: DEPO_SAYFA_SURUM, t: Date.now() }));
+        }
+      } catch (e) {}
+    };
+    var depoUzunSuredirEski = function () {
+      try {
+        var k = JSON.parse(localStorage.getItem(depoEskiAnahtar) || 'null');
+        return !!k && k.hedef === DEPO_SAYFA_SURUM && Date.now() - k.t >= 1800000;
+      } catch (e) { return false; }
+    };
     window.addEventListener('load', function () {
       if (DEPO_SAYFA_SURUM.indexOf('__') === 0) return; // yerel geliştirme
       if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) return;
       setTimeout(function () {
         fetch('version.json').then(function (y) { return y.json(); }).then(function (v) {
           var calisan = v && v.version;
-          if (!calisan || calisan === DEPO_SAYFA_SURUM) return;
+          if (!calisan) return;
+          var eski = calisan !== DEPO_SAYFA_SURUM;
+          depoEskiIsaretle(eski);
+          if (!eski) return;
           depoOnar();
         }).catch(function () {});
       }, 5000);
