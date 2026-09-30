@@ -1045,7 +1045,8 @@ class CompiledApp {
       _13370: x0 => globalThis.matchMedia(x0),
       _13380: () => globalThis.depoGuncelleVeYenile,
       _13381: () => globalThis.window.location.reload(),
-      _13382: () => globalThis.depoTekSekme,
+      _13382: x0 => { globalThis.depoOturumAcik = x0 },
+      _13383: () => globalThis.depoTekSekme,
 
     };
 

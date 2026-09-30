@@ -60,7 +60,7 @@
     // açılmaya devam ediyordu). Bu sayfa her açılışta ağdan gelir (çalışan
     // sayfa isteğini önce ağa sorar) → yayın sürümünü taşır; çalışan
     // (önbellekteki) uygulama sürümü version.json'dan okunur.
-    var DEPO_SAYFA_SURUM = '0.9.78';
+    var DEPO_SAYFA_SURUM = '0.9.79';
     var depoOnarimAnahtar = 'depo-onarim-son';
     // İnternet VARSA eski önbelleği bırakıp yeni sürümü doğrudan ağdan açar
     // (çevrimdışıyken ASLA — önbelleksiz uygulama açılamaz). En çok 10 dk'da
@@ -120,7 +120,15 @@
       navigator.serviceWorker.getRegistration().then(function (r) {
         if (!r) return;
         var bitti = false;
-        var tamam = function () { if (!bitti) { bitti = true; window.location.reload(); } };
+        // 29.09 (saha: KAĞAN): OTURUM AÇIKKEN kendiliğinden yenileme YOK —
+        // kullanıcı girişe düşüyordu. Yeni çalışan devrede; yeni sürüm bir
+        // sonraki açılışta gelir (uygulamanın 'Güncelle' düğmesi aynen çalışır).
+        var tamam = function () {
+          if (bitti) return;
+          bitti = true;
+          if (window.depoOturumAcik === true) return;
+          window.location.reload();
+        };
         // Tarayıcı yeni çalışanı bu adımdan ÖNCE kendisi kurup devreye almış
         // olabilir (devreye girme bildirimi kaçmış) → önce yeniden bak: yeni
         // sürüm artık sunuluyorsa düz yenileme yeter; değilse zorla.
@@ -131,7 +139,9 @@
         var zorla = function () {
           if (bitti) return;
           bitti = true;
+          if (window.depoOturumAcik === true) return; // oturum açıkken yok
           fetch('version.json').then(function (y) { return y.json(); }).then(function (v) {
+            if (window.depoOturumAcik === true) return;
             if (v && v.version === DEPO_SAYFA_SURUM) { window.location.reload(); return; }
             if (depoUzunSuredirEski()) window.depoZorlaYenile(true);
           }).catch(function () {});
