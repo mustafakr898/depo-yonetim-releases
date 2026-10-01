@@ -1,6 +1,6 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.79-20261001100019';
+const SURUM = 'depo-0.9.79-20261001103651';
 // [yol, icerik parmak izi] â€” onbellek anahtari 'yol?h=iz' (eslesmede
 // ignoreSearch kullanildigindan sayfa istekleri etkilenmez).
 const DOSYALAR = [
@@ -32,7 +32,7 @@ const DOSYALAR = [
   ['icons/Icon-maskable-512.png', '0a22c7f69a0829a5'],
   ['index.html', 'b0100192e6ef88e9'],
   ['main.dart.mjs', '802212743ce10293'],
-  ['main.dart.wasm', 'f04a749cc11a505d'],
+  ['main.dart.wasm', '29864b7f2147443f'],
   ['manifest.json', '42500596ad8aa888'],
   ['sqflite_sw.js', '946284ef26b62b59'],
   ['sqlite3.wasm', '922a76b182b6af69'],
