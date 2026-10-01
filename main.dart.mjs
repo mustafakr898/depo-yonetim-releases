@@ -484,6 +484,7 @@ class CompiledApp {
       _1440: (module,f) => finalizeWrapper(f, function(x0) { return module.exports._1440(f,arguments.length,x0) }),
       _1441: (module,f) => finalizeWrapper(f, function(x0) { return module.exports._1441(f,arguments.length,x0) }),
       _1442: (module,f) => finalizeWrapper(f, function(x0) { return module.exports._1442(f,arguments.length,x0) }),
+      _1444: (x0,x1) => x0.getItem(x1),
       _1445: (x0,x1) => x0.removeItem(x1),
       _1446: (x0,x1,x2) => x0.setItem(x1,x2),
       _1448: () => globalThis.localStorage,
