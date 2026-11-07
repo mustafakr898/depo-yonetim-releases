@@ -1,10 +1,10 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.89-20261024113804';
+const SURUM = 'depo-0.9.90-20261107111605';
 // [yol, icerik parmak izi] â€” onbellek anahtari 'yol?h=iz' (eslesmede
 // ignoreSearch kullanildigindan sayfa istekleri etkilenmez).
 const DOSYALAR = [
-  ['./', 'ef2ceabccd4ddfa5'],
+  ['./', 'ef7fa31ed0f03943'],
   ['assets/AssetManifest.bin', 'db9fde3bc0ced0a7'],
   ['assets/AssetManifest.bin.json', '2f68cd8c4dead63e'],
   ['assets/assets/fonts/NotoSans-Bold.ttf', 'cf382cad35e731fc'],
@@ -17,7 +17,7 @@ const DOSYALAR = [
   ['assets/assets/templates/ariza_formu.xlsx', 'f4ee5e762220b3ec'],
   ['assets/assets/templates/teklif_sablonu.xlsx', 'ce889afa269be8d3'],
   ['assets/FontManifest.json', 'cd7e03645bc44b2d'],
-  ['assets/fonts/MaterialIcons-Regular.otf', 'b610cef3057ece47'],
+  ['assets/fonts/MaterialIcons-Regular.otf', '8aae48abd1c49e2e'],
   ['assets/packages/cupertino_icons/assets/CupertinoIcons.ttf', '3d90c370aa4cf00d'],
   ['assets/shaders/ink_sparkle.frag', '5aee0e4ff369c055'],
   ['assets/shaders/stretch_effect.frag', 'c723fbb5b9a3456b'],
@@ -30,15 +30,15 @@ const DOSYALAR = [
   ['icons/Icon-512.png', 'e0459aacdef87583'],
   ['icons/Icon-maskable-192.png', '32ff1d29f8102e3f'],
   ['icons/Icon-maskable-512.png', '0a22c7f69a0829a5'],
-  ['index.html', 'ef2ceabccd4ddfa5'],
+  ['index.html', 'ef7fa31ed0f03943'],
   ['main.dart.mjs', '69fe6df77b10eee8'],
-  ['main.dart.wasm', '9945588af17374cf'],
+  ['main.dart.wasm', 'dc5bdfab5eed7b23'],
   ['manifest.json', '42500596ad8aa888'],
   ['sqflite_sw.js', '946284ef26b62b59'],
   ['sqlite3.wasm', '922a76b182b6af69'],
   ['vendor/zxing-0.21.3.min.js', 'd7cc8f69dd70bdcf'],
   ['vendor/zxing-LICENSE.txt', '849b3ff4527ff587'],
-  ['version.json', 'a7668f3ac1374c2e'],
+  ['version.json', '20d398fdf1a70670'],
 ];
 
 // Zayif mobil agda tek dosya yarida kalirsa TUM kurulum dusuyordu (telefon
