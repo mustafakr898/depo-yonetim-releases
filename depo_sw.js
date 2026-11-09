@@ -1,10 +1,10 @@
 // OTOMATIK URETILDI (web_sw_uret.ps1) â€” elle duzenleme.
 // Cevrimdisi acilis: uygulama dosyalari onbellekte; veri tarayici DB'sinde.
-const SURUM = 'depo-0.9.90-20261107111605';
+const SURUM = 'depo-0.9.91-20261109113638';
 // [yol, icerik parmak izi] â€” onbellek anahtari 'yol?h=iz' (eslesmede
 // ignoreSearch kullanildigindan sayfa istekleri etkilenmez).
 const DOSYALAR = [
-  ['./', 'ef7fa31ed0f03943'],
+  ['./', '9a2c70d08fbe34a4'],
   ['assets/AssetManifest.bin', 'db9fde3bc0ced0a7'],
   ['assets/AssetManifest.bin.json', '2f68cd8c4dead63e'],
   ['assets/assets/fonts/NotoSans-Bold.ttf', 'cf382cad35e731fc'],
@@ -30,15 +30,15 @@ const DOSYALAR = [
   ['icons/Icon-512.png', 'e0459aacdef87583'],
   ['icons/Icon-maskable-192.png', '32ff1d29f8102e3f'],
   ['icons/Icon-maskable-512.png', '0a22c7f69a0829a5'],
-  ['index.html', 'ef7fa31ed0f03943'],
+  ['index.html', '9a2c70d08fbe34a4'],
   ['main.dart.mjs', '69fe6df77b10eee8'],
-  ['main.dart.wasm', 'dc5bdfab5eed7b23'],
+  ['main.dart.wasm', '3f62a4fb1e32e617'],
   ['manifest.json', '42500596ad8aa888'],
   ['sqflite_sw.js', '946284ef26b62b59'],
   ['sqlite3.wasm', '922a76b182b6af69'],
   ['vendor/zxing-0.21.3.min.js', 'd7cc8f69dd70bdcf'],
   ['vendor/zxing-LICENSE.txt', '849b3ff4527ff587'],
-  ['version.json', '20d398fdf1a70670'],
+  ['version.json', '15f653ed69526d87'],
 ];
 
 // Zayif mobil agda tek dosya yarida kalirsa TUM kurulum dusuyordu (telefon
@@ -105,7 +105,7 @@ self.addEventListener('fetch', (e) => {
       .then((x) => x || caches.match('./'));
     e.respondWith(
       Promise.race([
-        fetch(r),
+        fetch(r).then((y) => y.ok ? y : onbellek().then((x) => x || y)),
         new Promise((_, red) => setTimeout(() => red(new Error('zaman')), 4000)),
       ]).catch(() => onbellek().then((x) => x || fetch(r)))
     );
